@@ -43,6 +43,15 @@ No confirmed successful unauthorized access was identified. However, the activit
 - Recommended restricting SSH access to trusted IP addresses.
 - Recommended disabling password authentication and using SSH key-based login.
 
+## Incident Timeline
+1. Attacker initiated SSH authentication attempts.
+2. Multiple failed login events were recorded in auth.log.
+3. Invalid usernames were observed indicating username enumeration.
+4. Repeated failures exceeded brute-force thresholds.
+5. Splunk detection queries identified suspicious source IPs.
+6. Security dashboards visualized attack activity.
+7. Investigation and remediation recommendations were documente
+
 ## Recommendations
 - Restrict inbound SSH access in AWS Security Groups.
 - Disable password-based SSH authentication.
