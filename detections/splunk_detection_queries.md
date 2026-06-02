@@ -3,6 +3,17 @@
 ## 1. Failed SSH Login Detection
 ### Purpose
 Detects failed SSH password authentication attempts on the AWS Ubuntu server.
+
+### Purpose
+Detects failed SSH password authentication attempts on the AWS Ubuntu server.
+
+### SPL Query
+```spl
+source="/var/log/auth.log" "Failed password"
+```
+
+## Failed SSH Login Detection
+
 ```spl
 source="/var/log/auth.log"
 "Failed password"
