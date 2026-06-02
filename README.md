@@ -1,3 +1,15 @@
+## Architecture
+
+![Architecture Diagram](architecture/images/architecture-diagram.png)
+
+## Detection Content
+
+- Splunk Detection Queries
+- MITRE ATT&CK Mapping
+- Incident Response Report
+- Threat Hunting Dashboards
+
+
 # Threat-Hunting-Log-Analysis-Platform
 SOC-focused Threat Hunting and Log Analysis Platform using Splunk Enterprise, AWS EC2 Ubuntu, and Kali Linux for attack simulation, IOC analysis, incident investigation, and security monitoring.
 
