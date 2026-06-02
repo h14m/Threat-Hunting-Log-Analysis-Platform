@@ -22,7 +22,7 @@ Splunk Enterprise
 Threat Detection & Investigation
         ↓
 Dashboards & Alerts
-----
+
 ## Technologies Used
 
 - Splunk Enterprise
@@ -32,7 +32,7 @@ Dashboards & Alerts
 - SSH
 - SPL (Search Processing Language)
 - Git & GitHub
-----
+
 ## Screenshots
 
 ### SOC Monitoring Dashboard
