@@ -25,7 +25,7 @@ source="/var/log/auth.log"
 Attackers may attempt to authenticate using guessed or stolen credentials over SSH.
 
 ### Splunk Query
-``spl
+## spl
 source="/var/log/auth.log"
 "Accepted password" OR "Accepted publickey"
 
