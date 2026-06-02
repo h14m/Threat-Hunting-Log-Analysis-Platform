@@ -9,7 +9,7 @@
 Multiple failed SSH login attempts were detected from external IP addresses. This activity indicates possible brute-force attempts against the Ubuntu server.
 
 ### Splunk Query
-```spl
+##spl
 source="/var/log/auth.log"
 "Failed password"
 | stats count by src_ip
@@ -25,7 +25,7 @@ source="/var/log/auth.log"
 Attackers may attempt to authenticate using guessed or stolen credentials over SSH.
 
 ### Splunk Query
-```spl
+``spl
 source="/var/log/auth.log"
 "Accepted password" OR "Accepted publickey"
 
