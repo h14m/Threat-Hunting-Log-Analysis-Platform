@@ -38,6 +38,55 @@ Dashboards & Alerts
 - SPL (Search Processing Language)
 - Git & GitHub
 
+## Attack Simulation
+
+The following attack scenarios were simulated:
+
+- SSH Brute Force Attempts
+- Invalid Username Enumeration
+- Repeated Authentication Failures
+- Unauthorized Login Attempts
+- External IP Reconnaissance Activity
+
+Attack traffic was generated from Kali Linux against the Ubuntu server to produce realistic authentication logs for investigation.
+
+## Security Dashboards
+
+The platform includes:
+
+- SOC Monitoring Dashboard
+- Threat Hunting Dashboard
+- Security Analytics Dashboard
+- Top Attacker IP Analysis
+- Failed Login Trend Analysis
+- Username Enumeration Detection
+- Authentication Timeline Monitoring
+
+## Alerting
+
+A Splunk alert was configured to identify SSH brute force activity.
+
+Trigger Condition:
+- Failed authentication events detected
+
+Severity:
+- High
+
+Action:
+- Generate security alert for investigation
+
+## Skills Demonstrated
+
+- Security Monitoring
+- Threat Hunting
+- Log Analysis
+- SIEM Operations
+- Incident Investigation
+- SSH Attack Detection
+- Splunk SPL Development
+- Dashboard Creation
+- IOC Analysis
+- AWS Security Monitoring
 ## Screenshots
 
 ### SOC Monitoring Dashboard
