@@ -12,14 +12,19 @@ The objective is to detect unauthorized access attempts, identify Indicators of 
 ## Architecture
 
 Kali Linux (Attacker)
+
         ↓
 AWS EC2 Ubuntu Server
+
         ↓
 /var/log/auth.log
+
         ↓
 Splunk Enterprise
+
         ↓
 Threat Detection & Investigation
+
         ↓
 Dashboards & Alerts
 
