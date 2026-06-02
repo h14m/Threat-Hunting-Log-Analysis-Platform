@@ -28,6 +28,7 @@ Threat Detection & Investigation
         │
         ▼
 Dashboards, Alerts & Incident Analysis
+```
 ## Technologies Used
 
 - Splunk Enterprise
