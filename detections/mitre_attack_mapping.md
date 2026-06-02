@@ -9,7 +9,7 @@
 Multiple failed SSH login attempts were detected from external IP addresses. This activity indicates possible brute-force attempts against the Ubuntu server.
 
 ### Splunk Query
-##spl
+## spl
 source="/var/log/auth.log"
 "Failed password"
 | stats count by src_ip
