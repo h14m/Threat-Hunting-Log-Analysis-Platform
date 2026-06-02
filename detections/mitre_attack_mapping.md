@@ -20,7 +20,7 @@ source="/var/log/auth.log"
 **MITRE Technique:** T1078 - Valid Accounts
 **Tactic:** Defense Evasion / Persistence / Privilege Escalation / Initial Access
 
-##Description
+### Description
 
 Attackers may attempt to authenticate using guessed or stolen credentials over SSH.
 
