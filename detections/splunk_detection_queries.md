@@ -1,7 +1,8 @@
 # Splunk Detection Queries
 
 ## Failed SSH Login Detection
-
+### Purpose
+Detects failed SSH password authentication attempts on the AWS Ubuntu server.
 ```spl
 source="/var/log/auth.log"
 "Failed password"
