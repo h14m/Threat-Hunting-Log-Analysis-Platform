@@ -9,12 +9,13 @@
 Multiple failed SSH login attempts were detected from external IP addresses. This activity indicates possible brute-force attempts against the Ubuntu server.
 
 ### Splunk Query
-## spl
-source="/var/log/auth.log"
-"Failed password"
+```spl
+source="/var/log/auth.log" "Failed password"
+| rex "from (?<src_ip>\d+\.\d+\.\d+\.\d+)"
 | stats count by src_ip
 | where count > 5
-
+| sort -count
+```
 ## Technique 2: Valid Account Attempt
 
 **MITRE Technique:** T1078 - Valid Accounts
@@ -25,15 +26,24 @@ source="/var/log/auth.log"
 Attackers may attempt to authenticate using guessed or stolen credentials over SSH.
 
 ### Splunk Query
-## spl
+```spl
 source="/var/log/auth.log"
 "Accepted password" OR "Accepted publickey"
-
+```
 ## Technique 3: Account Discovery / Username Enumeration
 
-MITRE Technique: T1087 - Account Discovery
-Tactic: Discovery
+**MITRE Technique:** T1087 - Account Discovery
+**Tactic:** Discovery
 
 ### Description
 
 Invalid username attempts indicate possible username enumeration activity against the SSH service.
+
+### Splunk Query
+
+```spl
+source="/var/log/auth.log" "Invalid user"
+| rex "Invalid user (?<username>\S+)"
+| stats count by username
+| sort -count
+```
