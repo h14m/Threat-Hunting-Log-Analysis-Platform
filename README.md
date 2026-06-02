@@ -1,6 +1,38 @@
 # Threat-Hunting-Log-Analysis-Platform
 SOC-focused Threat Hunting and Log Analysis Platform using Splunk Enterprise, AWS EC2 Ubuntu, and Kali Linux for attack simulation, IOC analysis, incident investigation, and security monitoring.
 
+## Overview
+
+This project simulates a Security Operations Center (SOC) environment for threat hunting and log analysis.
+
+The platform monitors Linux authentication logs collected from an AWS EC2 Ubuntu server and analyzes them using Splunk Enterprise. Attack activity is generated from Kali Linux to simulate real-world adversarial behavior.
+
+The objective is to detect unauthorized access attempts, identify Indicators of Compromise (IOCs), investigate suspicious activity, and create actionable security alerts and dashboards.
+
+## Architecture
+
+Kali Linux (Attacker)
+        ↓
+AWS EC2 Ubuntu Server
+        ↓
+/var/log/auth.log
+        ↓
+Splunk Enterprise
+        ↓
+Threat Detection & Investigation
+        ↓
+Dashboards & Alerts
+----
+## Technologies Used
+
+- Splunk Enterprise
+- AWS EC2 Ubuntu Server
+- Kali Linux
+- Linux Authentication Logs
+- SSH
+- SPL (Search Processing Language)
+- Git & GitHub
+----
 ## Screenshots
 
 ### SOC Monitoring Dashboard
