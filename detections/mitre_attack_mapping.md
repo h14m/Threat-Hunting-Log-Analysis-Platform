@@ -34,6 +34,6 @@ source="/var/log/auth.log"
 MITRE Technique: T1087 - Account Discovery
 Tactic: Discovery
 
-## Description
+### Description
 
 Invalid username attempts indicate possible username enumeration activity against the SSH service.
