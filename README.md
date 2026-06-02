@@ -11,23 +11,23 @@ The objective is to detect unauthorized access attempts, identify Indicators of 
 
 ## Architecture
 
+```text
 Kali Linux (Attacker)
-
-        ↓
+        │
+        ▼
 AWS EC2 Ubuntu Server
-
-        ↓
-/var/log/auth.log
-
-        ↓
-Splunk Enterprise
-
-        ↓
+        │
+        ▼
+Linux Authentication Logs (/var/log/auth.log)
+        │
+        ▼
+Splunk Enterprise SIEM
+        │
+        ▼
 Threat Detection & Investigation
-
-        ↓
-Dashboards & Alerts
-
+        │
+        ▼
+Dashboards, Alerts & Incident Analysis
 ## Technologies Used
 
 - Splunk Enterprise
